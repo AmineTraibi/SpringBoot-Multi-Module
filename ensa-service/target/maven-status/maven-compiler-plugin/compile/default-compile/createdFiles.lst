@@ -1,0 +1,5 @@
+com\ensa\service\repository\IUserRepository.class
+com\ensa\service\repository\IProduitRepository.class
+com\ensa\service\service\ProduitServiceImpl.class
+com\ensa\service\service\IProduitService.class
+com\ensa\service\repository\IRoleRepository.class
