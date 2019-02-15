@@ -13,9 +13,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import com.ensa.module.entities.Produit;
 import com.ensa.module.entities.Role;
 import com.ensa.module.entities.User;
-import com.ensa.service.repository.IProduitRepository;
-import com.ensa.service.repository.IRoleRepository;
-import com.ensa.service.repository.IUserRepository;
+import com.ensa.repository.repository.IProduitRepository;
+import com.ensa.repository.repository.IRoleRepository;
+import com.ensa.repository.repository.IUserRepository;
 
 @SpringBootApplication
 @Configuration
@@ -35,6 +35,18 @@ public class EnsaSpringBoot {
 		produitRepository.save(new Produit("Cartable1", 500, 50f));
 		produitRepository.save(new Produit("Marqueur1", 350, 2.10f));
 
+		produitRepository.save(new Produit("Livre2", 50, 2000));
+		produitRepository.save(new Produit("Cahier2", 200, 5.25f));
+		produitRepository.save(new Produit("Stylo2", 500, 2.10f));
+		produitRepository.save(new Produit("Cartable2", 500, 50f));
+		produitRepository.save(new Produit("Marqueur2", 350, 2.10f));
+
+		produitRepository.save(new Produit("Livre3", 50, 2000));
+		produitRepository.save(new Produit("Cahier3", 200, 5.25f));
+		produitRepository.save(new Produit("Stylo3", 500, 2.10f));
+		produitRepository.save(new Produit("Cartable3", 500, 50f));
+		produitRepository.save(new Produit("Marqueur3", 350, 2.10f));
+		
 		IRoleRepository roleRepository = ctx.getBean(IRoleRepository.class);
 
 		Role roleUser = new Role("ROLE_USER");

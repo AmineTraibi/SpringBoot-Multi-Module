@@ -21,5 +21,6 @@
   	<module>ensa-service</module>
   	<module>ensa-api</module>
   	<module>ensa-module</module>
+  	<module>ensa-repository</module>
   </modules>
 </project>
